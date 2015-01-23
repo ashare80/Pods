@@ -13,16 +13,11 @@ Pod::Spec.new do |s|
   s.summary          = "Nclusive package"
   s.description      = <<-DESC
                        Helpful library for Nclusive iOS projects
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
                        DESC
   s.homepage         = "https://nclusive.beanstalkapp.com/"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "Adam Share" => "adam.share@nclusive.com" }
   s.source           = { :git => "https://nclusive.git.beanstalkapp.com/nclusivepackage.git", :branch => 'pod', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
@@ -32,7 +27,5 @@ Pod::Spec.new do |s|
     'Nclusive-Package' => ['Pod/Assets/*.png']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'CoreLocation'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
